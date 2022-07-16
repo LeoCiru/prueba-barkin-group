@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "CompassDisplay-Regular";
+    src: url(../fonts/CompassDisplay-Regular.woff2);
+}
+
+@font-face {
+    font-family: "CompassSans-Regular";
+    src: url(../fonts/CompassSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: "CompassSerif-Regular";
+    src: url(../fonts/CompassSerif-Regular.woff);
+}
