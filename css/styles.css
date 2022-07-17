@@ -28,10 +28,15 @@ header {
   top: 0;
   background-color: #ffffff;
   z-index: 999;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 header .navBar {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 2px 4px 0px rgb(73, 72, 72);
@@ -40,6 +45,7 @@ header .navBar .navBar__logosNav {
   display: flex;
   justify-content: left;
   align-items: center;
+  flex-wrap: wrap;
 }
 header .navBar .navBar__logosNav .navBar__thumb {
   /* position: relative; */
@@ -354,5 +360,77 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   background-color: #fff;
   color: #000;
   border-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatMakesDifferent {
+  background-image: url(../img/whatMakeDif.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  height: 100%;
+}
+.whatMakesDifferent .whatMakesDifferent__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+  width: 50%;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video .whatMakesDifferent__img {
+  width: 100%;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__title {
+  font-family: "CompassDisplay-Regular";
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__features {
+  font-family: "CompassSans-Regular";
+  width: 75%;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__description {
+  font-family: "CompassSans-Regular";
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 20px;
+  width: 90%;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn {
+  width: 250px;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn .whatMakesDifferent__meet {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 40px;
+  border: 2px solid transparent;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "CompassSans-Regular";
+  display: block;
+}
+.whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn .whatMakesDifferent__meet:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */

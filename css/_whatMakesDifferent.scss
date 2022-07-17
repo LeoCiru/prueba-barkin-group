@@ -1,0 +1,82 @@
+.whatMakesDifferent {
+    background-image: url(../img/whatMakeDif.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:100px;
+    height: 100%;
+    
+    .whatMakesDifferent__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+        
+        .whatMakesDifferent__video {
+            width: 50%;
+    
+            .whatMakesDifferent__img {
+                width: 100%;
+            }
+        }
+    
+        .whatMakesDifferent__info {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .whatMakesDifferent__text {
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+
+                .whatMakesDifferent__title {
+                    font-family: "CompassDisplay-Regular";
+                    font-style: italic;
+                    font-size: 35px;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                }
+
+                .whatMakesDifferent__features {
+                    font-family: "CompassSans-Regular";
+                    width: 75%;
+                    margin-bottom: 25px;
+                    line-height: 20px;
+                }
+                
+                .whatMakesDifferent__description {
+                    font-family: "CompassSans-Regular";
+                    margin-bottom: 30px;
+                    text-align: justify;
+                    line-height: 20px;
+                    width: 90%;
+                }
+            }
+
+            .whatMakesDifferent__btn {
+                width: 250px;
+                .whatMakesDifferent__meet {
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 15px 40px;
+                    border: 2px solid transparent;
+                    background-color: #ffffff;
+                    color: #000000;
+                    font-family: "CompassSans-Regular";
+                    display: block;
+                    &:hover {
+                        border-color: #000000;
+                        background-color: #000000;
+                        color: #ffffff;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
