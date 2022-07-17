@@ -1,0 +1,148 @@
+.lifestyle {
+    background-image: url(../img/ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    
+    .lifestyle__yatch {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .lifestyle__text {
+        max-width: 1200px;
+        background-color: #fff;
+        height: auto;
+        margin: 50px 50px 50px 0;
+        padding: 50px;
+        display: flex;
+
+        .lifestyle__containerMainText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
+            .lifestyle__title {
+                font-family: "CompassDisplay-Regular";
+                font-style: italic;
+                font-size: 35px;
+                font-weight: 300;
+            }
+
+            .lifestyle__subtitle {
+                font-family: "CompassSans-Regular";
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+
+            .lifestyle__description {
+                font-family: "CompassSans-Regular";
+                font-weight: 300;
+                width: 100%;
+                text-align: justify;
+            }
+
+            .lifestyle__requestHelp {
+                font-family: "CompassSans-Regular";
+                text-decoration: none;
+                text-align: center;
+                background-color: #000;
+                color: #fff;
+                border: 2px solid transparent;
+                padding: 10px 20px;
+                width: 50%;
+                margin-top: 25px;
+                &:hover {
+                    border-color: #000;
+                    color: #000;
+                    background-color: #fff;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+
+        .lifestyle__links {
+            ul {
+                list-style: none;
+                padding-left: 10px;
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: #f6c042;
+                        font-family: "CompassSans-Regular";
+                        font-weight: 300;
+                    }
+                }
+                
+            }
+            
+
+        }
+
+        .lifestyle__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            .lifestyle__cardImg {
+                max-width: 550px;
+
+                .lifestyle__thumb {
+                    width: 100%;
+                }
+            }
+
+            .lifestyle__buttons {
+                position: absolute;
+                display: flex;
+                z-index: 10;
+                bottom: 90px;
+                left: -53px;
+    
+                .lifestyle__left {
+                    padding: 20px;
+                    background: none;
+                    border: none;
+                    background-color: #000;
+                    border: 2px solid transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fff;
+                        border-color: #000;
+                        color: #000;
+                        transition: all .3s ease-in-out;
+                    }
+    
+                        i { font-size: 1.1rem; }
+                }
+                .lifestyle__right {
+                    padding: 20px;
+                    background: none;
+                    border: none;
+                    background-color: #000;
+                    border: 2px solid transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #fff;
+                        border-color: #000;
+                        color: #000;
+                        transition: all .3s ease-in-out;
+                    }
+    
+                        i { font-size: 1.1rem; }
+                }
+            }
+        }
+    }
+}
