@@ -591,4 +591,161 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 .discover .discover__container .discover__buttons .discover__right i {
   font-size: 1.1rem;
+}
+
+.luxuryCondos {
+  padding: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+.luxuryCondos .luxuryCondos__container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  max-width: 1200px;
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text {
+  width: 40%;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text .luxuryCondos__title {
+  font-family: "CompassDisplay-Regular";
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 300;
+  /* margin-bottom: 30px; */
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text .luxuryCondos__subtitle {
+  font-family: "CompassSans-Regular";
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text .luxuryCondos__description {
+  font-family: "CompassSans-Regular";
+  font-weight: 300;
+  text-align: justify;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  line-height: 23px;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text .luxuryCondos__btn .luxuryCondos__allNeighborhoods {
+  font-family: "CompassSans-Regular";
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #000;
+  border: 2px solid transparent;
+  color: #fff;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__text .luxuryCondos__btn .luxuryCondos__allNeighborhoods:hover {
+  border-color: #000;
+  color: #000;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper {
+  display: flex;
+  width: 50%;
+  /* overflow: hidden; */
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  position: relative;
+  margin-right: 30px;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__cardBox {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__cardBox .luxuryCondos__thumb {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__cardBox .luxuryCondos__descriptionImg {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  font-family: "CompassSans-Regular";
+  font-size: 300;
+  line-height: 15px;
+  padding: 50px;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__cardBox:hover .luxuryCondos__descriptionImg {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  visibility: visible;
+  cursor: pointer;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__cardBox:hover .luxuryCondos__thumb {
+  filter: brightness(50%);
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__nameImg {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__wrapper .luxuryCondos__cardImg .luxuryCondos__nameImg .luxuryCondos__name {
+  font-family: "CompassSans-Regular";
+  font-size: 300;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  bottom: 50px;
+  left: 425px;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__left {
+  padding: 20px;
+  background: none;
+  border: none;
+  background-color: #000;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__left:hover {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__left i {
+  font-size: 1.1rem;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__right {
+  padding: 20px;
+  background: none;
+  border: none;
+  background-color: #000;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__right:hover {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__right i {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */
