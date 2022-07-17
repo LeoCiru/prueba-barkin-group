@@ -1,1 +1,272 @@
-@import url(./fuentes.css);/*# sourceMappingURL=styles.css.map */
+@import url(./fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MIXINS */
+/* KEYFRAMES */
+@-webkit-keyframes scrolling {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+@keyframes scrolling {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+header .navBar {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 4px 0px rgb(73, 72, 72);
+}
+header .navBar .navBar__logosNav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+header .navBar .navBar__logosNav .navBar__thumb {
+  /* position: relative; */
+  transform: scale(0.9);
+  /* &.navBar__thumb--line {
+      &::after {
+          content: '';
+          width: 1px;
+          background-color: #1b1b1b;
+          height: 320px;
+          position: absolute;
+          right: 130px;
+          top: 10px;
+      }
+  } */
+}
+header .navBar .navBar__contenidoNav {
+  display: flex;
+  justify-content: space-between;
+}
+header .navBar .navBar__contenidoNav .navBar__info {
+  display: flex;
+  flex-direction: column;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__listInfo {
+  display: flex;
+  /* padding-top: 10px; */
+  justify-content: right;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__listInfo li {
+  list-style: none;
+  padding-right: 30px;
+  font-family: "CompassSans-Regular";
+  font-size: 12px;
+  font-weight: bold;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links {
+  padding-top: 20px;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link {
+  list-style: none;
+  font-family: "CompassSans-Regular";
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 2px solid transparent;
+  margin-right: 15px;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link:hover {
+  cursor: pointer;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link:hover a {
+  border-bottom: 2px solid #000;
+  transition: all 0.3s ease-in-out;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link a {
+  text-decoration: none;
+  color: #000;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search {
+  border: 1px solid #000;
+  margin-right: 10px;
+  padding: 11px 20px;
+  list-style: none;
+  font-family: "CompassSans-Regular";
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search:hover {
+  color: #ffffff;
+  background-color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search:hover i {
+  color: #ffffff;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search i {
+  font-size: 14px;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button {
+  background-color: #000;
+  border: 2px solid transparent;
+  padding: 10px 33px;
+  font-size: 14px;
+  margin-right: 30px;
+  list-style: none;
+  font-family: "CompassSans-Regular";
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button:hover a {
+  color: #000;
+}
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.welcome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/welcome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 86px;
+}
+.welcome .welcome__title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.welcome .welcome__title .welcome__subtitleTop {
+  font-family: "CompassSerif-Regular";
+  font-size: 22px;
+  line-height: 18.3px;
+  color: #fff;
+}
+.welcome .welcome__title .welcome__mainTitle {
+  font-family: "CompassDisplay-Regular";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #fff;
+  padding: 10px;
+}
+.welcome .welcome__title .welcome__subtitleBottom {
+  font-family: "CompassSerif-Regular";
+  font-size: 17px;
+  line-height: 20.4px;
+  font-style: italic;
+  color: #fff;
+}
+.welcome .welcome__btns {
+  width: 600px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.welcome .welcome__btns .welcome__buyers {
+  background: none;
+  padding: 15px 80px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.welcome .welcome__btns .welcome__buyers:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.welcome .welcome__btns .welcome__sellers {
+  background: none;
+  padding: 15px 80px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.welcome .welcome__btns .welcome__sellers:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.welcome .welcome__form {
+  display: flex;
+}
+.welcome .welcome__form .welcome__searchBar {
+  display: inline-block;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  margin-bottom: 100px;
+  outline: none;
+}
+.welcome .welcome__form .welcome__searchBar::-moz-placeholder {
+  color: #000;
+}
+.welcome .welcome__form .welcome__searchBar:-ms-input-placeholder {
+  color: #000;
+}
+.welcome .welcome__form .welcome__searchBar::placeholder {
+  color: #000;
+}
+.welcome .welcome__form .welcome__btnSearch {
+  width: 50px;
+  height: 45.55px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+.welcome .welcome__form .welcome__btnSearch:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.welcome .welcome__scroll {
+  color: #fff;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome .welcome__scroll p {
+  font-family: "CompassSerif-Regular";
+  font-style: italic;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.welcome .welcome__scroll span {
+  display: inline-block;
+  font-size: 1.5rem;
+  -webkit-animation: scrolling 1s infinite;
+          animation: scrolling 1s infinite;
+}/*# sourceMappingURL=styles.css.map */

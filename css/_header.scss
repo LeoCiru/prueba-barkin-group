@@ -1,0 +1,132 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    .navBar {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0px 2px 4px 0px rgb(73, 72, 72);
+
+        .navBar__logosNav {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            
+            .navBar__thumb {
+                /* position: relative; */
+                transform: scale(.9);
+                /* &.navBar__thumb--line {
+                    &::after {
+                        content: '';
+                        width: 1px;
+                        background-color: #1b1b1b;
+                        height: 320px;
+                        position: absolute;
+                        right: 130px;
+                        top: 10px;
+                    }
+                } */
+            }
+            
+        }
+        
+        .navBar__contenidoNav {
+            display: flex;
+            justify-content: space-between;
+
+            .navBar__info {
+                display: flex;
+                flex-direction: column;
+
+                .navBar__listInfo {
+                    display: flex;
+                    /* padding-top: 10px; */
+                    justify-content: right;
+
+                    li {
+                        list-style: none;
+                        padding-right: 30px;
+                        font-family: "CompassSans-Regular";
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+
+                .navBar__links {
+                    padding-top: 20px;
+
+                    .navBar__listLinks {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        
+                        .navBar__link {
+                            list-style: none;
+                            font-family: "CompassSans-Regular";
+                            font-size: 12px;
+                            font-weight: bold;
+                            padding: 15px;
+                            border-bottom: 2px solid transparent;
+                            margin-right: 15px;
+                            &:hover {
+                                cursor: pointer;
+                                a {
+                                    border-bottom: 2px solid #000;
+                                    transition: all .3s ease-in-out;
+                                }
+                            }
+
+                            
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                            }
+                            
+                        }
+                        .navBar__search {
+                            border: 1px solid #000;
+                            margin-right: 10px;
+                            padding: 11px 20px;
+                            list-style: none;
+                            font-family: "CompassSans-Regular";
+                            &:hover {
+                                color: #ffffff;
+                                background-color: #000;
+                                cursor: pointer;
+                                transition: all .3s ease-in-out;
+                                i { color: #ffffff; }
+                            }
+
+                            i { font-size: 14px; }
+                        }
+
+                        .navBar__link--button {
+                            background-color: #000;
+                            border: 2px solid transparent;
+                            padding: 10px 33px;
+                            font-size: 14px;
+                            margin-right: 30px;
+                            list-style: none;
+                            font-family: "CompassSans-Regular";
+                            &:hover {
+                                cursor: pointer;
+                                border: 2px solid #000;
+                                background-color: #ffffff;
+                                transition: all .3s ease-in-out;
+                                a { color: #000; }
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

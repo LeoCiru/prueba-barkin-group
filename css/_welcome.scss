@@ -1,0 +1,108 @@
+.welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/welcome.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 86px;
+
+    .welcome__title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        .welcome__subtitleTop {
+            font-family: "CompassSerif-Regular";
+            font-size: 22px;
+            line-height: 18.3px;
+            color: #fff;
+        }
+
+        .welcome__mainTitle {
+            font-family: "CompassDisplay-Regular";
+            font-size: 60px;
+            font-weight: 300;
+            line-height: 50px;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .welcome__subtitleBottom {
+            font-family: "CompassSerif-Regular";
+            font-size: 17px;
+            line-height: 20.4px;
+            font-style: italic;
+            color: #fff;
+        }
+    }
+
+    .welcome__btns {
+        width: 600px;
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+
+        .welcome__buyers {
+            @include btnsWelcome;
+        }
+
+        .welcome__sellers {
+            @include btnsWelcome;
+        }
+    }
+
+    .welcome__form {
+        display: flex;
+        .welcome__searchBar {
+            display: inline-block;
+            width: 400px;
+            padding: 15px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            margin-bottom: 100px;
+            outline: none;
+            &::placeholder {
+                color: #000
+            }
+        }
+
+        .welcome__btnSearch {
+            width: 50px;
+            height: 45.55px;
+            background-color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            &:hover {
+                cursor: pointer;
+                background-color: #000;
+                color: #fff;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+
+    .welcome__scroll {
+        color: #fff;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p { 
+            font-family: "CompassSerif-Regular";
+            font-style: italic;
+            font-weight: 300;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        span {
+            display: inline-block;
+            font-size: 1.5rem;
+            animation: scrolling 1s infinite;
+        }
+    }
+}
