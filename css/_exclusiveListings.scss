@@ -1,0 +1,93 @@
+.exclusiveListings {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .exclusiveListings__title {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .exclusiveListings__subtitleTop {
+            font-family: "CompassSerif-Regular";
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 24px;
+            font-style: italic;
+        }
+
+        .exclusiveListings__mainTitle {
+            font-family: "CompassDisplay-Regular";
+            font-size: 53px;
+            line-height: 63.3px;
+            font-weight: 300;
+            color: #333;
+        }
+    }
+
+    .exclusiveListings__imgs {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .exclusiveListings__img {
+            margin: 0 20px;
+            position: relative;
+            
+            .exclusiveListings__thumb {
+                margin: 0 auto;
+                width: 650px;
+                filter: brightness(75%);
+            }
+    
+            .exclusiveListings__textImg {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                
+                .exclusiveListings__imgTitle {
+                    font-family: "CompassSans-Regular";
+                    color: #fff;
+                    font-size: 22px;
+                    line-height: 26.4px;
+                    padding: 0;
+                    left: 10px;
+                }
+                
+                p {
+                    font-family: "CompassSans-Regular";
+                    font-size: 16px;
+                    line-height: 13.3px;
+                    color: #fff;
+                    display: block;
+                    &:nth-child(2) {
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .exclusiveListings__viewProperties {
+        display: inline-block;
+        margin: 20px 0 50px 0;
+        padding: 15px 25px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        font-family: "CompassSans-Regular";
+        font-size: 17px;
+        line-height: 14.2px;
+        border: 2px solid transparent;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+            transition: all .3s ease-in-out;
+        }
+    }
+}

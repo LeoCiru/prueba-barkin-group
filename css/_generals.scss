@@ -6,8 +6,17 @@
     box-sizing: border-box;
 }
 
-/* MIXINS */
+
+/* KEYFRAMES */
+
+@keyframes scrolling {
+    from { transform: translateY(0);}
+    to { transform: translateY(25px);}
+}
+
+
 @mixin btnsWelcome {
+    /* MIXINS */
     background: none;
     padding: 15px 80px;
     color: #fff;
@@ -19,12 +28,3 @@
         transition: all .3s ease-in-out;
     }
 }
-
-
-/* KEYFRAMES */
-
-@keyframes scrolling {
-    from { transform: translateY(0);}
-    to { transform: translateY(25px);}
-}
-

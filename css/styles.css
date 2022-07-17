@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* MIXINS */
 /* KEYFRAMES */
 @-webkit-keyframes scrolling {
   from {
@@ -28,10 +27,11 @@ header {
   position: sticky;
   top: 0;
   background-color: #ffffff;
+  z-index: 999;
 }
 header .navBar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 2px 4px 0px rgb(73, 72, 72);
@@ -152,7 +152,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 90vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +193,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   justify-content: space-around;
 }
 .welcome .welcome__btns .welcome__buyers {
+  /* MIXINS */
   background: none;
   padding: 15px 80px;
   color: #fff;
@@ -205,6 +206,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   transition: all 0.3s ease-in-out;
 }
 .welcome .welcome__btns .welcome__sellers {
+  /* MIXINS */
   background: none;
   padding: 15px 80px;
   color: #fff;
@@ -256,6 +258,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 .welcome .welcome__scroll p {
   font-family: "CompassSerif-Regular";
@@ -269,4 +272,87 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   font-size: 1.5rem;
   -webkit-animation: scrolling 1s infinite;
           animation: scrolling 1s infinite;
+}
+
+.exclusiveListings {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exclusiveListings .exclusiveListings__title {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.exclusiveListings .exclusiveListings__title .exclusiveListings__subtitleTop {
+  font-family: "CompassSerif-Regular";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  font-style: italic;
+}
+.exclusiveListings .exclusiveListings__title .exclusiveListings__mainTitle {
+  font-family: "CompassDisplay-Regular";
+  font-size: 53px;
+  line-height: 63.3px;
+  font-weight: 300;
+  color: #333;
+}
+.exclusiveListings .exclusiveListings__imgs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img {
+  margin: 0 20px;
+  position: relative;
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img .exclusiveListings__thumb {
+  margin: 0 auto;
+  width: 650px;
+  filter: brightness(75%);
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img .exclusiveListings__textImg {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img .exclusiveListings__textImg .exclusiveListings__imgTitle {
+  font-family: "CompassSans-Regular";
+  color: #fff;
+  font-size: 22px;
+  line-height: 26.4px;
+  padding: 0;
+  left: 10px;
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img .exclusiveListings__textImg p {
+  font-family: "CompassSans-Regular";
+  font-size: 16px;
+  line-height: 13.3px;
+  color: #fff;
+  display: block;
+}
+.exclusiveListings .exclusiveListings__imgs .exclusiveListings__img .exclusiveListings__textImg p:nth-child(2) {
+  padding-bottom: 5px;
+}
+.exclusiveListings .exclusiveListings__viewProperties {
+  display: inline-block;
+  margin: 20px 0 50px 0;
+  padding: 15px 25px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: "CompassSans-Regular";
+  font-size: 17px;
+  line-height: 14.2px;
+  border: 2px solid transparent;
+}
+.exclusiveListings .exclusiveListings__viewProperties:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
