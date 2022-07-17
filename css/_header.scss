@@ -4,8 +4,9 @@ header {
     background-color: #ffffff;
     z-index: 999;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
     .navBar {
         width: 100%;
         display: flex;
