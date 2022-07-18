@@ -2053,14 +2053,17 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   flex-direction: column;
   max-width: 1200px;
   margin: 50px auto;
+  padding: 0 5%;
 }
 .footer .footer__logoFooter {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 15px;
 }
 .footer .footer__infoFooter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 25px 0 25px 0;
 }
 .footer .footer__infoFooter .footer__group .footer__title {
@@ -2089,9 +2092,26 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   align-items: center;
   margin: 25px 0;
 }
+@media screen and (max-width: 640px) {
+  .footer .footer__compass {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer .footer__compass .footer__logoCompass {
+    margin-bottom: 20px;
+  }
+}
 .footer .footer__compass .footer__socialMedias .footer__listSocialMedias {
   display: flex;
   list-style: none;
+}
+@media screen and (max-width: 510px) {
+  .footer .footer__compass .footer__socialMedias .footer__listSocialMedias {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .footer .footer__compass .footer__socialMedias .footer__listSocialMedias .footer__socialMedia {
   margin-right: 20px;
@@ -2110,14 +2130,36 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 845px) {
+  .footer .footer__terms {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .footer .footer__terms .footer__listFooter {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
+@media screen and (max-width: 740px) {
+  .footer .footer__terms .footer__listFooter {
+    flex-wrap: wrap;
+  }
+}
 .footer .footer__terms .footer__listFooter .footer__term {
   padding-right: 20px;
   font-family: "CompassSans-Regular";
+}
+@media screen and (max-width: 740px) {
+  .footer .footer__terms .footer__listFooter .footer__term {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footer .footer__terms .footer__listFooter .footer__term {
+    padding: 10px;
+  }
 }
 .footer .footer__terms .footer__listFooter .footer__term a {
   text-decoration: none;

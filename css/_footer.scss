@@ -3,15 +3,18 @@
     flex-direction: column;
     max-width: 1200px;
     margin: 50px auto;
+    padding: 0 5%;
 
     .footer__logoFooter {
         display: flex;
         justify-content: flex-start;
+        margin-bottom: 15px;
     }
 
     .footer__infoFooter {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 25px 0 25px 0;
 
         .footer__group {
@@ -51,12 +54,27 @@
         justify-content: space-between;
         align-items: center;
         margin: 25px 0;
+        @media screen and (max-width: 640px) {
+            flex-direction: column;
+        }
+
+        .footer__logoCompass {
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: 20px;
+            }
+        }
 
         .footer__socialMedias {
             
             .footer__listSocialMedias {
                 display: flex;
                 list-style: none;
+                @media screen and (max-width: 510px) {
+                    flex-wrap: wrap;
+                    text-align: center;
+                    justify-content: center;
+                }
                 
                 .footer__socialMedia { 
                     margin-right: 20px;
@@ -79,15 +97,29 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 845px) {
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .footer__listFooter {
             display: flex;
             justify-content: space-evenly;
             list-style: none;
+            @media screen and (max-width: 740px) {
+                flex-wrap: wrap;
+            }
 
             .footer__term {
                 padding-right: 20px;
                 font-family: "CompassSans-Regular";
+                @media screen and (max-width: 740px) {
+                    padding: 20px;
+                }
+                @media screen and (max-width: 740px) {
+                    padding: 10px;
+                }
 
                 a {
                     text-decoration: none;
