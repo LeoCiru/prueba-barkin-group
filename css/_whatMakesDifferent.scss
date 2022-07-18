@@ -55,11 +55,16 @@
             flex-direction: column;
             justify-content: center;
             @media screen and (max-width: 1105px) {
-                width: 125%;
+                padding-left: 50px;
                 align-items: center;
-            }
-            @media screen and (max-width: 1105px) {
                 width: 140%;
+            }
+            @media screen and (max-width: 856px) {
+                padding-left: 10px;
+                width: 130%;
+            }
+            @media screen and (max-width: 856px) {
+                padding-left: 0px;
             }
             @media screen and (max-width: 480px) {
                 width: 160%;

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 /* KEYFRAMES */
@@ -553,13 +554,20 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 @media screen and (max-width: 1105px) {
   .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
-    width: 125%;
+    padding-left: 50px;
     align-items: center;
+    width: 140%;
   }
 }
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 856px) {
   .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
-    width: 140%;
+    padding-left: 10px;
+    width: 130%;
+  }
+}
+@media screen and (max-width: 856px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -673,6 +681,56 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   margin: auto;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .discover {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .discover {
+    padding: 50px 100px 100px 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .discover {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .discover {
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .discover {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .discover {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .discover {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .discover {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .discover {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discover {
+    max-width: 450px;
+  }
+}
 .discover .discover__container {
   display: flex;
   /* justify-content: space-between; */
@@ -682,8 +740,29 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   width: 90%;
   margin: auto;
 }
+@media screen and (max-width: 1010px) {
+  .discover .discover__container {
+    flex-direction: column;
+  }
+}
 .discover .discover__container .discover__text {
   width: 40%;
+}
+@media screen and (max-width: 1010px) {
+  .discover .discover__container .discover__text {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .discover .discover__container .discover__text {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .discover .discover__container .discover__text {
+    width: 190%;
+  }
 }
 .discover .discover__container .discover__text .discover__title {
   font-family: "CompassDisplay-Regular";
@@ -726,6 +805,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   width: 50%;
   /* overflow: hidden; */
 }
+@media screen and (max-width: 1200px) {
+  .discover .discover__container .discover__wrapper {
+    max-width: 1170px;
+  }
+}
 .discover .discover__container .discover__wrapper .discover__cardImg {
   width: 350px;
   display: flex;
@@ -747,6 +831,41 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   justify-content: center;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 281px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 235px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 215px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 215px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__thumb {
+    width: 175px;
+  }
+}
 .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__descriptionImg {
   color: #fff;
   display: inline-block;
@@ -759,6 +878,26 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
+}
+@media screen and (max-width: 701px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__descriptionImg {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 501px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__descriptionImg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__descriptionImg {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 341px) {
+  .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox .discover__descriptionImg {
+    font-size: 50%;
+  }
 }
 .discover .discover__container .discover__wrapper .discover__cardImg .discover__cardBox:hover .discover__descriptionImg {
   transform: translateY(0px);
@@ -787,6 +926,98 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   z-index: 10;
   bottom: 40px;
   left: 375px;
+  /* @media screen and (max-width: 976px) {
+      bottom: 30px;
+      left: 295px;
+  } */
+}
+@media screen and (max-width: 1290px) {
+  .discover .discover__container .discover__buttons {
+    bottom: 35px;
+    left: 358px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .discover .discover__container .discover__buttons {
+    bottom: 33px;
+    left: 305px;
+  }
+}
+@media screen and (max-width: 1085px) {
+  .discover .discover__container .discover__buttons {
+    left: 299px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .discover .discover__container .discover__buttons {
+    left: 295px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .discover .discover__container .discover__buttons {
+    left: 285px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .discover .discover__container .discover__buttons {
+    left: 278px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .discover .discover__container .discover__buttons {
+    bottom: 35px;
+    left: 127px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .discover .discover__container .discover__buttons {
+    left: 102px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .discover .discover__container .discover__buttons {
+    left: 91px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .discover .discover__container .discover__buttons {
+    left: 80px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .discover .discover__container .discover__buttons {
+    left: 68px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .discover .discover__container .discover__buttons {
+    left: 57px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .discover .discover__container .discover__buttons {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discover .discover__container .discover__buttons {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .discover .discover__container .discover__buttons {
+    left: -8px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .discover .discover__container .discover__buttons {
+    left: -18px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .discover .discover__container .discover__buttons {
+    left: -24px;
+  }
 }
 .discover .discover__container .discover__buttons .discover__left {
   padding: 20px;
