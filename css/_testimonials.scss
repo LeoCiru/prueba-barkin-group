@@ -1,0 +1,88 @@
+.testimonials {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    position: relative;
+
+    .testimonials__title {
+        font-family: "CompassDisplay-Regular";
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 72px;
+        color: #333333;
+        padding: 50px;
+    }
+    &:after {
+        content: '';
+        width: 1px;
+        background-color: #1b1b1b;
+        height: 320px;
+        position: absolute;
+        right: 800px;
+        top: 50px;
+        transform: rotate(22deg);
+    }
+
+    .testimonials__slider {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px 100px 100px;
+
+        .testimonials__wrapper {
+            
+            .testimonials__testimonial {
+                
+                .testimonials__message {
+                    display: inline-block;
+                    margin-bottom: 25px;
+                    text-align: justify;
+                    font-style: italic;
+                    font-family: "CompassSans-Regular";
+                }
+
+                .testimonials__author {
+                    font-family: "CompassSans-Regular";
+                    font-weight: 600;
+                    display: inline-block;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .testimonials__buttons {
+            display: flex;
+            .testimonials__left {
+                padding: 20px;
+                background: none;
+                border: none;
+                background-color: #000;
+                border: 2px solid transparent;
+                color: #fff;
+                cursor: pointer;
+                &:hover {
+                    border-color: #000;
+                    color: #000;
+                    background-color: #fff;
+                    transition: all .3s ease-in-out;
+                } 
+            }
+
+            .testimonials__right {
+                padding: 20px;
+                background: none;
+                border: none;
+                background-color: #000;
+                border: 2px solid transparent;
+                color: #fff;
+                cursor: pointer;
+                &:hover {
+                    border-color: #000;
+                    color: #000;
+                    background-color: #fff;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
