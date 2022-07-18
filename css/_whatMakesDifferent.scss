@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     padding:100px;
     height: 100%;
+    @media screen and (max-width: 720px) {
+        padding: 50px 100px 100px 100px;
+    }
     
     .whatMakesDifferent__container {
         display: flex;
@@ -12,9 +15,34 @@
         max-width: 1200px;
         width: 90%;
         margin: auto;
+        @media screen and (max-width: 1105px) {
+            flex-direction: column;
+        }
         
         .whatMakesDifferent__video {
             width: 50%;
+            @media screen and (max-width: 1105px) {
+                width: 125%;
+                margin-bottom: 30px;
+            }
+            @media screen and (max-width: 720px) {
+                width: 140%;
+            }
+            @media screen and (max-width: 600px) {
+                width: 150%;
+            }
+            @media screen and (max-width: 480px) {
+                width: 170%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 180%;
+            }
+            @media screen and (max-width: 360px) {
+                width: 205%;
+            }
+            @media screen and (max-width: 340px) {
+                width: 240%;
+            }
     
             .whatMakesDifferent__img {
                 width: 100%;
@@ -26,11 +54,34 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media screen and (max-width: 1105px) {
+                width: 125%;
+                align-items: center;
+            }
+            @media screen and (max-width: 1105px) {
+                width: 140%;
+            }
+            @media screen and (max-width: 480px) {
+                width: 160%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 180%;
+            }
+            @media screen and (max-width: 360px) {
+                width: 190%;
+            }
+            @media screen and (max-width: 340px) {
+                width: 215%;
+            }
 
             .whatMakesDifferent__text {
                 display: flex;
                 flex-direction: column;
                 color: #fff;
+                @media screen and (max-width: 748px) {
+                    width: 110%;
+                    margin: auto;
+                }
 
                 .whatMakesDifferent__title {
                     font-family: "CompassDisplay-Regular";
@@ -38,6 +89,13 @@
                     font-size: 35px;
                     font-weight: 300;
                     margin-bottom: 30px;
+                    @media screen and (max-width: 1105px) {
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: 715px) {
+                        font-size: 25px;
+                        width: 82%;
+                    }
                 }
 
                 .whatMakesDifferent__features {
@@ -45,6 +103,13 @@
                     width: 75%;
                     margin-bottom: 25px;
                     line-height: 20px;
+                    @media screen and (max-width: 1105px) {
+                        margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: 715px) {
+                        font-size: 15px;
+                        width: 82%;
+                    }
                 }
                 
                 .whatMakesDifferent__description {
@@ -53,11 +118,17 @@
                     text-align: justify;
                     line-height: 20px;
                     width: 90%;
+                    @media screen and (max-width: 715px) {
+                        font-size: 15px;
+                    }
                 }
             }
 
             .whatMakesDifferent__btn {
                 width: 250px;
+                @media screen and (max-width: 340px) {
+                    width: 230px;
+                }
                 .whatMakesDifferent__meet {
                     text-align: center;
                     text-decoration: none;

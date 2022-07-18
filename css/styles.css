@@ -485,6 +485,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   padding: 100px;
   height: 100%;
 }
+@media screen and (max-width: 720px) {
+  .whatMakesDifferent {
+    padding: 50px 100px 100px 100px;
+  }
+}
 .whatMakesDifferent .whatMakesDifferent__container {
   display: flex;
   justify-content: space-between;
@@ -493,8 +498,49 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   width: 90%;
   margin: auto;
 }
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container {
+    flex-direction: column;
+  }
+}
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
   width: 50%;
+}
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 125%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 170%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 180%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 205%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
+    width: 240%;
+  }
 }
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video .whatMakesDifferent__img {
   width: 100%;
@@ -505,10 +551,47 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 125%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 160%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 180%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 190%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info {
+    width: 215%;
+  }
+}
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text {
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 748px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text {
+    width: 110%;
+    margin: auto;
+  }
 }
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__title {
   font-family: "CompassDisplay-Regular";
@@ -517,11 +600,33 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   font-weight: 300;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__title {
+    font-size: 25px;
+    width: 82%;
+  }
+}
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__features {
   font-family: "CompassSans-Regular";
   width: 75%;
   margin-bottom: 25px;
   line-height: 20px;
+}
+@media screen and (max-width: 1105px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__features {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__features {
+    font-size: 15px;
+    width: 82%;
+  }
 }
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__description {
   font-family: "CompassSans-Regular";
@@ -530,8 +635,18 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   line-height: 20px;
   width: 90%;
 }
+@media screen and (max-width: 715px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__text .whatMakesDifferent__description {
+    font-size: 15px;
+  }
+}
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn {
   width: 250px;
+}
+@media screen and (max-width: 340px) {
+  .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn {
+    width: 230px;
+  }
 }
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__info .whatMakesDifferent__btn .whatMakesDifferent__meet {
   text-align: center;
@@ -551,9 +666,12 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 
 .discover {
-  padding: 100px;
+  padding: 100px 100px 100px 0px;
   display: flex;
   justify-content: flex-start;
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
 }
 .discover .discover__container {
   display: flex;
@@ -667,8 +785,8 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   position: absolute;
   display: flex;
   z-index: 10;
-  bottom: 50px;
-  left: 425px;
+  bottom: 40px;
+  left: 375px;
 }
 .discover .discover__container .discover__buttons .discover__left {
   padding: 20px;
@@ -708,9 +826,12 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 
 .luxuryCondos {
-  padding: 100px;
+  padding: 100px 100px 100px 0px;
   display: flex;
   justify-content: flex-start;
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
 }
 .luxuryCondos .luxuryCondos__container {
   display: flex;
@@ -824,8 +945,8 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   position: absolute;
   display: flex;
   z-index: 10;
-  bottom: 50px;
-  left: 425px;
+  bottom: 40px;
+  left: 375px;
 }
 .luxuryCondos .luxuryCondos__container .luxuryCondos__buttons .luxuryCondos__left {
   padding: 20px;

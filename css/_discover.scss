@@ -1,7 +1,10 @@
 .discover {
-    padding: 100px;
+    padding: 100px 100px 100px 0px;
     display: flex;
     justify-content: flex-start;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
 
     .discover__container {
         display: flex;
@@ -133,8 +136,8 @@
             position: absolute;
             display: flex;
             z-index: 10;
-            bottom: 50px;
-            left: 425px;
+            bottom: 40px;
+            left: 375px;
 
             .discover__left {
                 padding: 20px;
