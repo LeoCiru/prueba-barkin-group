@@ -37,7 +37,7 @@ header {
 header .navBar {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -51,7 +51,8 @@ header .navBar .navBar__logosNav {
 }
 header .navBar .navBar__logosNav .navBar__thumb {
   /* position: relative; */
-  transform: scale(0.9);
+  /* transform: scale(.9); */
+  width: 80%;
   /* &.navBar__thumb--line {
       &::after {
           content: '';
@@ -66,12 +67,13 @@ header .navBar .navBar__logosNav .navBar__thumb {
 }
 @media screen and (max-width: 510px) {
   header .navBar .navBar__logosNav .navBar__thumb {
-    transform: scale(0.7);
+    /* transform: scale(.7); */
+    width: 70%;
   }
 }
 @media screen and (max-width: 480px) {
   header .navBar .navBar__logosNav .navBar__thumb {
-    transform: scale(0.5);
+    /* transform: scale(.5); */
   }
 }
 header .navBar .navBar__hamburguer {
@@ -80,10 +82,16 @@ header .navBar .navBar__hamburguer {
   visibility: hidden;
   cursor: pointer;
   font-size: 3rem;
+  padding-right: 2%;
 }
 @media screen and (max-width: 1474px) {
   header .navBar .navBar__hamburguer {
     visibility: visible;
+  }
+}
+@media screen and (max-width: 510px) {
+  header .navBar .navBar__hamburguer {
+    font-size: 2.5rem;
   }
 }
 header .navBar .navBar__contenidoNav {
