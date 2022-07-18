@@ -1695,7 +1695,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 @media screen and (max-width: 340px) {
   .experienceExpertise .experienceExpertise__main {
-    padding: 25px 25px;
+    padding: 0px 25px;
   }
 }
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text {
@@ -1927,6 +1927,22 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   display: flex;
   position: relative;
 }
+@media screen and (max-width: 1190px) {
+  .testimonials::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 945px) {
+  .testimonials {
+    flex-direction: column;
+    padding: 0px 10%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .testimonials {
+    width: 120%;
+  }
+}
 .testimonials .testimonials__title {
   font-family: "CompassDisplay-Regular";
   font-size: 60px;
@@ -1935,6 +1951,17 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   line-height: 72px;
   color: #333333;
   padding: 50px;
+}
+@media screen and (max-width: 945px) {
+  .testimonials .testimonials__title {
+    padding: 30px 0 0 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .testimonials .testimonials__title {
+    font-size: 2.8rem;
+    padding: 50px 0 0 0;
+  }
 }
 .testimonials:after {
   content: "";
@@ -1951,6 +1978,16 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   flex-direction: column;
   padding: 50px 100px 100px 100px;
 }
+@media screen and (max-width: 990px) {
+  .testimonials .testimonials__slider {
+    padding: 30px 100px 100px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .testimonials .testimonials__slider {
+    padding: 15px 100px 100px 0px;
+  }
+}
 .testimonials .testimonials__slider .testimonials__wrapper .testimonials__testimonial .testimonials__message {
   display: inline-block;
   margin-bottom: 25px;
@@ -1963,6 +2000,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   font-weight: 600;
   display: inline-block;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 400px) {
+  .testimonials .testimonials__slider .testimonials__wrapper .testimonials__testimonial .testimonials__author {
+    margin-bottom: 25px;
+  }
 }
 .testimonials .testimonials__slider .testimonials__buttons {
   display: flex;
