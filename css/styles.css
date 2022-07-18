@@ -1687,10 +1687,32 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   margin: auto;
   padding: 50px;
 }
+@media screen and (max-width: 980px) {
+  .experienceExpertise .experienceExpertise__main {
+    flex-direction: column;
+    padding: 25px 50px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .experienceExpertise .experienceExpertise__main {
+    padding: 25px 25px;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text {
   margin: auto;
   padding-right: 100px;
   width: 50%;
+}
+@media screen and (max-width: 1140px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__title {
   font-family: "CompassDisplay-Regular";
@@ -1710,10 +1732,20 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details {
+    flex-direction: row;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail {
+    flex-direction: column;
+  }
 }
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp {
   margin-right: 30px;
@@ -1736,6 +1768,18 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   text-align: justify;
   font-weight: 600;
 }
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp {
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp h3 {
+    text-align: left;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__awards span {
   font-family: "CompassSans-Regular";
   font-size: 14px;
@@ -1754,13 +1798,30 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   text-align: justify;
   font-weight: 600;
 }
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__awards {
+    text-align: left;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__awards h3 {
+    text-align: left;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top {
+    flex-direction: column;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing span {
   font-family: "CompassSans-Regular";
@@ -1780,6 +1841,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   text-align: justify;
   font-weight: 600;
 }
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing h3 {
+    text-align: left;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__ranked span {
   font-family: "CompassSans-Regular";
   font-size: 14px;
@@ -1797,6 +1863,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   margin: 5px 0;
   text-align: justify;
   font-weight: 600;
+}
+@media screen and (max-width: 540px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__ranked h3 {
+    text-align: left;
+  }
 }
 .experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__btn {
   width: 250px;
@@ -1820,6 +1891,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 .experienceExpertise .experienceExpertise__main .experienceExpertise__img {
   width: 50%;
 }
+@media screen and (max-width: 980px) {
+  .experienceExpertise .experienceExpertise__main .experienceExpertise__img {
+    display: none;
+  }
+}
 .experienceExpertise .experienceExpertise__main .experienceExpertise__img .experienceExpertise__thumb {
   width: 100%;
 }
@@ -1836,11 +1912,13 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 .experienceExpertise .experienceExpertise__enterprises .experienceExpertise__thumbs {
   display: flex;
   justify-content: space-evenly;
-  /* width: 90%; */
+  width: 100%;
+  flex-wrap: wrap;
 }
 .experienceExpertise .experienceExpertise__enterprises .experienceExpertise__thumbs .experienceExpertise__thumb {
   vertical-align: top;
-  transform: scale(0.9);
+  width: 10%;
+  transform: scaleX(1.5);
 }
 
 .testimonials {
