@@ -755,27 +755,34 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
-.lifestyle .lifestyle__yatch {
-  display: inline-block;
-  width: 100%;
+.lifestyle .lifestyle__yacht {
+  display: inline-flex;
+  align-self: center;
+  width: 30%;
   position: absolute;
-  z-index: 10;
+  left: 0;
+  /* z-index: 10; */
+  margin-bottom: 100px;
 }
 .lifestyle .lifestyle__text {
   max-width: 1200px;
   background-color: #fff;
-  height: auto;
-  margin: 50px 50px 50px 0;
-  padding: 50px;
+  /* height: auto; */
+  margin: 100px auto;
+  padding: 100px 100px 100px 200px;
   display: flex;
+  /* position: absolute; */
+  left: 40%;
 }
 .lifestyle .lifestyle__text .lifestyle__containerMainText {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   width: 50%;
 }
 .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__title {
@@ -804,7 +811,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   color: #fff;
   border: 2px solid transparent;
   padding: 10px 20px;
-  width: 50%;
+  width: 70%;
   margin-top: 25px;
 }
 .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__requestHelp:hover {
@@ -830,6 +837,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   position: relative;
 }
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
@@ -837,6 +845,10 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg .lifestyle__thumb {
   width: 100%;
+}
+.lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg .lifestyle__descriptionImg {
+  font-family: "CompassSans-Regular";
+  margin-top: 10px;
 }
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__buttons {
   position: absolute;
