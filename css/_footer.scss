@@ -1,0 +1,116 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    .footer__logoFooter {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer__infoFooter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px 0 25px 0;
+
+        .footer__group {
+            
+            .footer__title {
+                font-family: "CompassSans-Regular";
+                color: #333333;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+            }
+
+            .footer__list {
+                
+                .footer__item {
+                    list-style: none;
+                    font-family: "CompassSans-Regular";
+                    margin-bottom: 5px;
+                    border-bottom: 2px solid transparent;
+                    &:hover {
+                        border-color: #333333;
+                        transition: all .3s ease-in-out;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer__compass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 0;
+
+        .footer__logoCompass {
+
+        }
+
+        .footer__socialMedias {
+            
+            .footer__listSocialMedias {
+                display: flex;
+                list-style: none;
+                
+                .footer__socialMedia { 
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .footer__details {
+        font-family: "CompassSans-Regular";
+        color: #333333;
+        font-size: .7rem;
+        text-align: justify;
+        font-weight: 600;
+        line-height: 15px;
+        margin-bottom: 25px;
+    }
+
+    .footer__terms {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer__listFooter {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+            .footer__term {
+                padding-right: 20px;
+                font-family: "CompassSans-Regular";
+
+                a {
+                    text-decoration: none;
+                    color: #333333;
+                    text-align: center;
+                    border-bottom: 2px solid transparent;
+                    &:hover {
+                        border-color: #333333;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .footer__realtor {
+
+            .footer__thumbRealtor {
+                transform: scale(.75);
+            }
+        }
+    }
+}
