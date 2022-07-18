@@ -892,4 +892,171 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__buttons .lifestyle__right i {
   font-size: 1.1rem;
+}
+
+.experienceExpertise {
+  display: flex;
+  flex-direction: column;
+}
+.experienceExpertise .experienceExpertise__main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text {
+  margin: auto;
+  padding-right: 100px;
+  width: 50%;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__title {
+  font-family: "CompassDisplay-Regular";
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__description {
+  font-family: "CompassSans-Regular";
+  font-weight: 300;
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details {
+  display: flex;
+  flex-direction: column;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp {
+  margin-right: 30px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp span {
+  font-family: "CompassSans-Regular";
+  font-size: 14px;
+  line-height: 11.7px;
+  color: #333333;
+  font-weight: 300;
+  text-align: justify;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__exp h3 {
+  font-family: "CompassSans-Regular";
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  margin: 5px 0;
+  text-align: justify;
+  font-weight: 600;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__awards span {
+  font-family: "CompassSans-Regular";
+  font-size: 14px;
+  line-height: 11.7px;
+  color: #333333;
+  font-weight: 300;
+  text-align: justify;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__detail .experienceExpertise__awards h3 {
+  font-family: "CompassSans-Regular";
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  margin: 5px 0;
+  text-align: justify;
+  font-weight: 600;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing {
+  margin-right: 30px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing span {
+  font-family: "CompassSans-Regular";
+  font-size: 14px;
+  line-height: 11.7px;
+  color: #333333;
+  font-weight: 300;
+  text-align: justify;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__producing h3 {
+  font-family: "CompassSans-Regular";
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  margin: 5px 0;
+  text-align: justify;
+  font-weight: 600;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__ranked span {
+  font-family: "CompassSans-Regular";
+  font-size: 14px;
+  line-height: 11.7px;
+  color: #333333;
+  font-weight: 300;
+  text-align: justify;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__details .experienceExpertise__top .experienceExpertise__ranked h3 {
+  font-family: "CompassSans-Regular";
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  margin: 5px 0;
+  text-align: justify;
+  font-weight: 600;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__btn {
+  width: 250px;
+  margin-top: 10px;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__btn a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 15px 60px;
+  background-color: #000;
+  font-family: "CompassSans-Regular";
+  border: 2px solid transparent;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__text .experienceExpertise__btn a:hover {
+  border-color: #000;
+  color: #000;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__img {
+  width: 50%;
+}
+.experienceExpertise .experienceExpertise__main .experienceExpertise__img .experienceExpertise__thumb {
+  width: 100%;
+}
+.experienceExpertise .experienceExpertise__enterprises {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "CompassSerif-Regular";
+  font-style: italic;
+  font-weight: 600;
+  max-width: 1200px;
+  margin: auto;
+}
+.experienceExpertise .experienceExpertise__enterprises .experienceExpertise__thumbs {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 90%; */
+}
+.experienceExpertise .experienceExpertise__enterprises .experienceExpertise__thumbs .experienceExpertise__thumb {
+  vertical-align: top;
+  transform: scale(0.9);
 }/*# sourceMappingURL=styles.css.map */

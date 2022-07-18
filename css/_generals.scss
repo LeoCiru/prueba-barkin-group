@@ -28,3 +28,25 @@
         transition: all .3s ease-in-out;
     }
 }
+
+@mixin styleExperienceDetails {
+    span {
+        font-family: "CompassSans-Regular";
+        font-size: 14px;
+        line-height: 11.7px;
+        color: #333333;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    h3 {
+        font-family: "CompassSans-Regular";
+        font-size: 30px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: #333333;
+        margin: 5px 0;
+        text-align: justify;
+        font-weight: 600;
+    }
+}
