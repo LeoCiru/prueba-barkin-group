@@ -15,6 +15,16 @@
         left: 0;
         /* z-index: 10; */
         margin-bottom: 100px;
+        @media screen and (max-width: 1500px) {
+            width: 25%;
+        }
+        @media screen and (max-width: 1400px) {
+            width: 22%;
+        }
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+        
     }
     
     .lifestyle__text {
@@ -26,13 +36,30 @@
         display: flex;
         /* position: absolute; */
         left: 40%;
-
+        @media screen and (max-width: 1250px) {
+            padding: 50px 80px;
+            max-width: 1080px;
+        }
+        @media screen and (max-width: 1125px) {
+            max-width: 1000px;
+        }
+        @media screen and (max-width: 1070px) {
+            max-width: 930px;
+        }
+        @media screen and (max-width: 990px) {
+            flex-direction: column;
+        }
+        
         .lifestyle__containerMainText {
             display: flex;
             flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
             width: 50%;
+            @media screen and (max-width: 990px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
 
             .lifestyle__title {
                 font-family: "CompassDisplay-Regular";
@@ -71,13 +98,31 @@
                     background-color: #fff;
                     transition: all .3s ease-in-out;
                 }
+                @media screen and (max-width: 990px) {
+                    width: 45%;
+                }
+                @media screen and (max-width: 630px) {
+                    width: 60%;
+                }
+                @media screen and (max-width: 485px) {
+                    margin: 20px auto;
+                    width: 100%;
+                }
             }
         }
 
         .lifestyle__links {
             ul {
+                @media screen and (max-width: 990px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
                 list-style: none;
-                padding-left: 10px;
+                padding: 0px 10px;
+                display: inline-block;
                 li {
                     margin-bottom: 10px;
 
@@ -103,6 +148,18 @@
 
             .lifestyle__cardImg {
                 max-width: 550px;
+                @media screen and (max-width: 990px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 700px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 430px) {
+                    width: 120%;
+                }
+                @media screen and (max-width: 350px) {
+                    width: 135%;
+                }
 
                 .lifestyle__thumb {
                     width: 100%;
@@ -120,6 +177,9 @@
                 z-index: 10;
                 bottom: 90px;
                 left: -53px;
+                @media screen and (max-width: 1125px) {
+                    bottom: 50px;
+                }
     
                 .lifestyle__left {
                     padding: 20px;

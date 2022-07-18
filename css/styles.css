@@ -1457,6 +1457,21 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   /* z-index: 10; */
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1500px) {
+  .lifestyle .lifestyle__yacht {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .lifestyle .lifestyle__yacht {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .lifestyle .lifestyle__yacht {
+    display: none;
+  }
+}
 .lifestyle .lifestyle__text {
   max-width: 1200px;
   background-color: #fff;
@@ -1467,12 +1482,39 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   /* position: absolute; */
   left: 40%;
 }
+@media screen and (max-width: 1250px) {
+  .lifestyle .lifestyle__text {
+    padding: 50px 80px;
+    max-width: 1080px;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .lifestyle .lifestyle__text {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .lifestyle .lifestyle__text {
+    max-width: 930px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .lifestyle .lifestyle__text {
+    flex-direction: column;
+  }
+}
 .lifestyle .lifestyle__text .lifestyle__containerMainText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   width: 50%;
+}
+@media screen and (max-width: 990px) {
+  .lifestyle .lifestyle__text .lifestyle__containerMainText {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__title {
   font-family: "CompassDisplay-Regular";
@@ -1509,9 +1551,35 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 990px) {
+  .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__requestHelp {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__requestHelp {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .lifestyle .lifestyle__text .lifestyle__containerMainText .lifestyle__requestHelp {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
 .lifestyle .lifestyle__text .lifestyle__links ul {
   list-style: none;
-  padding-left: 10px;
+  padding: 0px 10px;
+  display: inline-block;
+}
+@media screen and (max-width: 990px) {
+  .lifestyle .lifestyle__text .lifestyle__links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 .lifestyle .lifestyle__text .lifestyle__links ul li {
   margin-bottom: 10px;
@@ -1532,6 +1600,26 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
   max-width: 550px;
 }
+@media screen and (max-width: 990px) {
+  .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
+    width: 120%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg {
+    width: 135%;
+  }
+}
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__cardImg .lifestyle__thumb {
   width: 100%;
 }
@@ -1545,6 +1633,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   z-index: 10;
   bottom: 90px;
   left: -53px;
+}
+@media screen and (max-width: 1125px) {
+  .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__buttons {
+    bottom: 50px;
+  }
 }
 .lifestyle .lifestyle__text .lifestyle__wrapper .lifestyle__buttons .lifestyle__left {
   padding: 20px;
