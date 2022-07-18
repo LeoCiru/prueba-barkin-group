@@ -46,13 +46,28 @@
         padding: 50px;
         display: flex;
         justify-content: space-around;
+        @media screen and (max-width: 525px) {
+            flex-direction: column;
+            width: 470px;
+        }
+        @media screen and (max-width: 380px) {
+            width: 385px;
+        }
 
         .welcome__buyers {
             @include btnsWelcome;
+
+            @media screen and (max-width: 525px) {
+                margin: 15px;
+            }
         }
 
         .welcome__sellers {
             @include btnsWelcome;
+
+            @media screen and (max-width: 525px) {
+                margin: 15px;
+            }
         }
     }
 
@@ -68,6 +83,12 @@
             outline: none;
             &::placeholder {
                 color: #000
+            }
+            @media screen and (max-width: 525px) {
+                width: 290px;
+            }
+            @media screen and (max-width: 380px) {
+                width: 205px;
             }
         }
 

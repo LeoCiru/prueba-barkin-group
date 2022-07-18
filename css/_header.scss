@@ -27,6 +27,12 @@ header {
             .navBar__thumb {
                 /* position: relative; */
                 transform: scale(.9);
+                @media screen and (max-width: 510px) {
+                    transform: scale(.7);
+                }
+                @media screen and (max-width: 480px) {
+                    transform: scale(.5);
+                }
                 /* &.navBar__thumb--line {
                     &::after {
                         content: '';
