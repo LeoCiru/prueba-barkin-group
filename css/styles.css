@@ -580,6 +580,7 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 }
 .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
   width: 50%;
+  cursor: pointer;
 }
 @media screen and (max-width: 1105px) {
   .whatMakesDifferent .whatMakesDifferent__container .whatMakesDifferent__video {
