@@ -43,6 +43,11 @@ header .navBar {
   padding-bottom: 10px;
   box-shadow: 0px 2px 4px 0px rgb(73, 72, 72);
 }
+@media screen and (max-width: 400px) {
+  header .navBar {
+    flex-direction: column;
+  }
+}
 header .navBar .navBar__logosNav {
   display: flex;
   justify-content: left;
@@ -53,6 +58,9 @@ header .navBar .navBar__logosNav .navBar__thumb {
   /* position: relative; */
   /* transform: scale(.9); */
   width: 80%;
+  /* @media screen and (max-width: 510px) {
+      width: 70%;
+  } */
   /* &.navBar__thumb--line {
       &::after {
           content: '';
@@ -65,15 +73,14 @@ header .navBar .navBar__logosNav .navBar__thumb {
       }
   } */
 }
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 430px) {
   header .navBar .navBar__logosNav .navBar__thumb {
-    /* transform: scale(.7); */
-    width: 70%;
+    width: 90%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   header .navBar .navBar__logosNav .navBar__thumb {
-    /* transform: scale(.5); */
+    width: 50%;
   }
 }
 header .navBar .navBar__hamburguer {
@@ -94,9 +101,28 @@ header .navBar .navBar__hamburguer {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__hamburguer {
+    padding-left: 10px;
+    font-size: 2.5rem;
+  }
+}
 header .navBar .navBar__contenidoNav {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  /* @media screen and (max-width: 1474px) {
+      overflow: hidden;
+  } */
+}
+@media screen and (max-width: 1474px) {
+  header .navBar .navBar__contenidoNav {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__contenidoNav {
+    text-align: left;
+  }
 }
 header .navBar .navBar__contenidoNav .navBar__info {
   display: flex;
@@ -106,6 +132,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__listInfo {
   display: flex;
   /* padding-top: 10px; */
   justify-content: right;
+}
+@media screen and (max-width: 1474px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__listInfo {
+    display: none;
+  }
 }
 header .navBar .navBar__contenidoNav .navBar__info .navBar__listInfo li {
   list-style: none;
@@ -122,6 +153,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (max-width: 1474px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks {
+    display: none;
+  }
+}
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link {
   list-style: none;
   font-family: "CompassSans-Regular";
@@ -137,6 +173,11 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link:hover a {
   border-bottom: 2px solid #000;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link {
+    padding: 5px;
+  }
 }
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link a {
   text-decoration: none;
@@ -158,6 +199,16 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search:hover i {
   color: #ffffff;
 }
+@media screen and (max-width: 1474px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search {
+    margin: 15px;
+  }
+}
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__search i {
   font-size: 14px;
   color: #000;
@@ -170,6 +221,16 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   margin-right: 30px;
   list-style: none;
   font-family: "CompassSans-Regular";
+}
+@media screen and (max-width: 1474px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button {
+    margin: 15px;
+  }
 }
 header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks .navBar__link--button:hover {
   cursor: pointer;
@@ -184,9 +245,14 @@ header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listL
   text-decoration: none;
   color: #ffffff;
 }
-@media screen and (max-width: 1474px) {
-  header .navBar .navBar__contenidoNav {
-    display: none;
+header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks--active {
+  overflow: visible;
+  flex-direction: column;
+  display: block;
+}
+@media screen and (max-width: 400px) {
+  header .navBar .navBar__contenidoNav .navBar__info .navBar__links .navBar__listLinks--active {
+    flex-direction: row !important;
   }
 }
 
